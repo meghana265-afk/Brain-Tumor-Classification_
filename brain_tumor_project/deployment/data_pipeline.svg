@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="260" font-family="Segoe UI, Arial" font-size="14">
+  <style>
+    .box { fill:#ffffff; stroke:#1f4e79; stroke-width:2; }
+    .title { font-weight:600; fill:#0b3d60; }
+    .sub { font-size:12; fill:#333; }
+    .arrow { stroke:#555; stroke-width:2; marker-end:url(#arrowhead); }
+    .phase { fill:#e8f2fb; stroke:#c2d9ec; stroke-width:1; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  <rect x="10" y="10" width="1160" height="240" rx="12" ry="12" class="phase" />
+  <text x="30" y="35" class="title" font-size="18">Brain Tumor Classification — End-to-End Data & ML Pipeline</text>
+
+  <!-- Ingestion -->
+  <rect x="40" y="70" width="150" height="120" rx="10" class="box" />
+  <text x="55" y="95" class="title">Ingestion</text>
+  <text x="55" y="115" class="sub">Folders: Training/</text>
+  <text x="55" y="132" class="sub">Testing/ (4 classes)</text>
+  <text x="55" y="149" class="sub">Image load (disk)</text>
+
+  <!-- Preprocess -->
+  <rect x="220" y="70" width="160" height="120" rx="10" class="box" />
+  <text x="235" y="95" class="title">Preprocess</text>
+  <text x="235" y="115" class="sub">Resize 150x150</text>
+  <text x="235" y="132" class="sub">Normalize [0,1]</text>
+  <text x="235" y="149" class="sub">Label mapping</text>
+
+  <!-- Augment -->
+  <rect x="410" y="70" width="160" height="120" rx="10" class="box" />
+  <text x="425" y="95" class="title">Augment</text>
+  <text x="425" y="115" class="sub">Rotate / Shift</text>
+  <text x="425" y="132" class="sub">Shear / Zoom</text>
+  <text x="425" y="149" class="sub">Flip / Brightness</text>
+
+  <!-- Train -->
+  <rect x="600" y="70" width="160" height="120" rx="10" class="box" />
+  <text x="615" y="95" class="title">Train</text>
+  <text x="615" y="115" class="sub">Baseline CNN</text>
+  <text x="615" y="132" class="sub">VGG16 Fine-tune</text>
+  <text x="615" y="149" class="sub">Class weights + ES</text>
+
+  <!-- Evaluate -->
+  <rect x="790" y="70" width="160" height="120" rx="10" class="box" />
+  <text x="805" y="95" class="title">Evaluate</text>
+  <text x="805" y="115" class="sub">Confusion matrix</text>
+  <text x="805" y="132" class="sub">F1 / Kappa</text>
+  <text x="805" y="149" class="sub">Compare models</text>
+
+  <!-- Predict & Reports -->
+  <rect x="980" y="70" width="160" height="120" rx="10" class="box" />
+  <text x="995" y="95" class="title">Predict & Report</text>
+  <text x="995" y="115" class="sub">Single image</text>
+  <text x="995" y="132" class="sub">Side-by-side</text>
+  <text x="995" y="149" class="sub">Text + Plots</text>
+
+  <!-- Arrows -->
+  <line x1="190" y1="130" x2="220" y2="130" class="arrow" />
+  <line x1="380" y1="130" x2="410" y2="130" class="arrow" />
+  <line x1="570" y1="130" x2="600" y2="130" class="arrow" />
+  <line x1="760" y1="130" x2="790" y2="130" class="arrow" />
+  <line x1="950" y1="130" x2="980" y2="130" class="arrow" />
+
+  <!-- Bottom annotation -->
+  <text x="40" y="215" class="sub">Scripts: preprocess.py → train_model.py / train_model_enhanced.py → evaluate*.py → compare_models.py → predict.py</text>
+  <text x="40" y="235" class="sub">Artifacts: models (.h5), metrics (.txt), plots (.png), logs (.csv)</text>
+</svg>

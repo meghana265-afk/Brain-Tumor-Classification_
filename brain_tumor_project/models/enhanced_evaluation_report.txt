@@ -1,0 +1,39 @@
+======================================================================
+ENHANCED MODEL - EVALUATION REPORT
+======================================================================
+
+ENHANCED MODEL PERFORMANCE:
+----------------------------------------------------------------------
+Accuracy:              0.8619 (86.19%)
+Precision (Macro):     0.8594
+Precision (Weighted):  0.8645
+Recall (Macro):        0.8535
+Recall (Weighted):     0.8619
+F1-Score (Macro):      0.8521
+F1-Score (Weighted):   0.8591
+Cohen's Kappa:         0.8145
+Matthews Corr Coef:    0.8170
+
+DETAILED CLASSIFICATION REPORT:
+----------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+      glioma       0.91      0.75      0.82       300
+  meningioma       0.79      0.73      0.76       306
+     notumor       0.93      0.97      0.95       405
+   pituitary       0.81      0.97      0.88       300
+
+    accuracy                           0.86      1311
+   macro avg       0.86      0.85      0.85      1311
+weighted avg       0.86      0.86      0.86      1311
+
+
+COMPARISON WITH BASELINE MODEL:
+----------------------------------------------------------------------
+Baseline Accuracy:     0.8680 (86.80%)
+Enhanced Accuracy:     0.8619 (86.19%)
+Improvement:           -0.61%
+
+Baseline F1-Score:     0.8579
+Enhanced F1-Score:     0.8521
+Improvement:           -0.58%

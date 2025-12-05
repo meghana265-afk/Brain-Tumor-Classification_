@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brain Tumor Classification — P3 Project Page</title>
+  <style>
+    body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}
+    h1,h2{color:#1f4e79}
+    .card{border:1px solid #ddd;border-radius:8px;padding:16px;margin:12px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    code,pre{background:#f7f7f7;padding:4px 6px;border-radius:4px}
+    a{color:#0b6aa2;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .badge{display:inline-block;background:#e8f2fb;color:#0b6aa2;border:1px solid #cbe2f6;padding:4px 8px;border-radius:12px;margin-right:8px}
+  </style>
+</head>
+<body>
+  <h1>Brain Tumor Classification — P3 Project Page</h1>
+  <div class="card">
+    <div class="badge">P1</div>
+    <div class="badge">P2</div>
+    <div class="badge">P3</div>
+    <p>This page aggregates the key artifacts for the final presentation: docs, code, execution order, and demo instructions.</p>
+  </div>
+
+  <h2>Quick Links</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Documentation</h3>
+      <ul>
+        <li><a href="README.md">README.md</a></li>
+        <li><a href="COMPLETE_PROJECT_GUIDE.md">Complete Project Guide</a></li>
+        <li><a href="P2_SUBMISSION_DOCUMENT.md">P2 Submission Document</a></li>
+        <li><a href="EXECUTION_ORDER.md">Execution Order</a></li>
+        <li><a href="TWO_MODELS_EXPLAINED.md">Two Models Explained</a></li>
+        <li><a href="QUICK_REFERENCE.md">Quick Reference</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Source Code</h3>
+      <ul>
+        <li><a href="src/config.py">config.py</a></li>
+        <li><a href="src/train_model.py">train_model.py</a></li>
+        <li><a href="src/train_model_enhanced.py">train_model_enhanced.py</a></li>
+        <li><a href="src/evaluate.py">evaluate.py</a></li>
+        <li><a href="src/evaluate_enhanced.py">evaluate_enhanced.py</a></li>
+        <li><a href="src/compare_models.py">compare_models.py</a></li>
+        <li><a href="src/predict.py">predict.py</a></li>
+        <li><a href="src/preprocess.py">preprocess.py</a></li>
+        <li><a href="src/utils.py">utils.py</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Execution Order</h2>
+  <div class="card">
+    <p>Follow this sequence during the demo (see <a href="EXECUTION_ORDER.md">details</a>):</p>
+    <pre><code># Phase 1: Baseline
+python brain_tumor_project\src\train_model.py
+python brain_tumor_project\src\evaluate.py
+
+# Phase 2: Enhanced (P2)
+python brain_tumor_project\src\train_model_enhanced.py
+python brain_tumor_project\src\evaluate_enhanced.py
+python brain_tumor_project\src\compare_models.py
+
+# Phase 3: Demo
+python brain_tumor_project\src\predict.py Testing\glioma\Te-glTr_0000.jpg --both</code></pre>
+  </div>
+
+  <h2>Data Pipeline</h2>
+  <div class="card">
+    <p>Ingestion → Preprocess → Augment → Train → Evaluate → Predict → Reports</p>
+    <ul>
+      <li>Ingestion: `Training/` and `Testing/` folders</li>
+      <li>Preprocess: <code>preprocess.py</code></li>
+      <li>Augment: within <code>train_model*.py</code></li>
+      <li>Train: <code>train_model.py</code>, <code>train_model_enhanced.py</code></li>
+      <li>Evaluate: <code>evaluate.py</code>, <code>evaluate_enhanced.py</code></li>
+      <li>Predict: <code>predict.py</code></li>
+      <li>Reports: text files + plots</li>
+    </ul>
+    <figure style="margin:12px 0;">
+      <img src="data_pipeline.svg" alt="Data & ML Pipeline Diagram" style="max-width:100%;border:1px solid #ddd;border-radius:6px;" />
+      <figcaption style="font-size:12px;color:#555;margin-top:4px;">Figure: End-to-end pipeline from raw images to predictions & reports.</figcaption>
+    </figure>
+  </div>
+
+  <h2>Environment & Troubleshooting</h2>
+  <div class="card">
+    <ul>
+      <li>Python 3.10.11, TensorFlow 2.10.0</li>
+      <li>Install deps: <code>pip install tensorflow numpy opencv-python matplotlib scikit-learn seaborn pandas</code></li>
+      <li>Windows console uses ASCII: we replaced emojis and Unicode bars.</li>
+    </ul>
+  </div>
+
+  <footer style="margin-top:24px;color:#666">
+    <p>Prepared for final presentation (Dec 2). All artifacts local to <code>brain_tumor_project</code>.</p>
+  </footer>
+</body>
+</html>
