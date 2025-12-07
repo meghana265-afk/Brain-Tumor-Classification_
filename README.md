@@ -77,7 +77,7 @@ Then place your MRI images into the matching class folders under `Training/` and
 
 **Windows (PowerShell):**
 ```powershell
-SETUP.bat
+./SETUP.bat
 ```
 
 **Mac/Linux (Terminal):**
@@ -107,7 +107,7 @@ streamlit run dashboard_app/app_clean.py
 ```powershell
 git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git
 cd Brain-Tumor-Classification_
-SETUP.bat
+./SETUP.bat
 ```
 
 **Mac/Linux (Terminal):**
