@@ -47,6 +47,22 @@ cd Brain-Tumor-Classification_ && source .venv/bin/activate && .venv/bin/python 
 
 Outputs to terminal plus files: `brain_tumor_project/outputs/confusion_matrix.png` and `brain_tumor_project/models/evaluation_report.txt`.
 
+## 🗂️ Create Folder Scaffold (no data included)
+
+Run once to create required class folders:
+
+**Windows (PowerShell):**
+```powershell
+cd Brain-Tumor-Classification_ ; ./CREATE_DATA_DIRS.bat
+```
+
+**macOS/Linux:**
+```bash
+cd Brain-Tumor-Classification_ && chmod +x CREATE_DATA_DIRS.sh && ./CREATE_DATA_DIRS.sh
+```
+
+Then place your MRI images into the matching class folders under `Training/` and `Testing/`.
+
 ---
 
 ## 🔽 OPTION 1: Download as ZIP File (Easiest - No Git Required)
