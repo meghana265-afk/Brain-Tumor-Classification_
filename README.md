@@ -11,33 +11,103 @@
 
 ## ⚡ QUICKEST START (30 seconds)
 
-### Windows
+### Choose One Method:
+
+---
+
+## 🔽 OPTION 1: Download as ZIP File (Easiest - No Git Required)
+
+### Step 1: Download ZIP
+1. Go to: https://github.com/meghana265-afk/Brain-Tumor-Classification_
+2. Click **Code** (green button) → **Download ZIP**
+3. Extract the ZIP file to your desired location
+4. Open terminal/PowerShell in extracted folder
+
+### Step 2: Setup (Automatic)
+
+**Windows (PowerShell):**
 ```powershell
-git clone https://github.com/meghana265-afk/Brain-Tumor-Classification.git
-cd Brain-Tumor-Classification
 SETUP.bat
 ```
 
-### Mac/Linux
+**Mac/Linux (Terminal):**
 ```bash
-git clone https://github.com/meghana265-afk/Brain-Tumor-Classification.git
-cd Brain-Tumor-Classification
 chmod +x SETUP.sh
 ./SETUP.sh
 ```
 
-Then run dashboard: `streamlit run dashboard_app/app_clean.py`
+### Step 3: Run Dashboard
+```bash
+streamlit run dashboard_app/app_clean.py
+```
+
+### Advantages of ZIP:
+✅ No Git installation needed  
+✅ Single download  
+✅ Works offline after download  
+✅ Easiest for beginners  
 
 ---
 
-## 📋 STEP-BY-STEP INSTRUCTIONS
+## 💻 OPTION 2: Git Clone (For Version Control)
 
 ### Step 1: Clone Repository
 
-```bash
-git clone https://github.com/meghana265-afk/Brain-Tumor-Classification.git
-cd Brain-Tumor-Classification
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git
+cd Brain-Tumor-Classification_
+SETUP.bat
 ```
+
+**Mac/Linux (Terminal):**
+```bash
+git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git
+cd Brain-Tumor-Classification_
+chmod +x SETUP.sh
+./SETUP.sh
+```
+
+### Step 2: Run Dashboard
+```bash
+streamlit run dashboard_app/app_clean.py
+```
+
+---
+
+## 📊 Comparison: ZIP vs Git Clone
+
+| Feature | ZIP Download | Git Clone |
+|---------|--------------|-----------|
+| **Ease of Use** | ⭐⭐⭐⭐⭐ Very Easy | ⭐⭐⭐⭐ Easy |
+| **Setup Time** | 2 minutes | 2 minutes |
+| **Git Required** | ❌ No | ✅ Yes |
+| **Update Project** | Manual re-download | `git pull` |
+| **File Size** | ~15 MB | ~15 MB |
+| **For Beginners** | ✅ Recommended | ✓ Also good |
+| **For Developers** | ✓ Works | ✅ Better |
+| **Version Control** | ❌ No | ✅ Yes |
+
+**👉 Recommendation:** 
+- **New to coding?** → Use **ZIP** (Option 1)
+- **Know Git?** → Use **Git Clone** (Option 2)
+- **Want to contribute?** → Use **Git Clone** (Option 2)
+
+---
+
+## ⚠️ Important Notes
+
+### If using ZIP:
+- Don't re-extract over existing folder
+- Extract to a clean location
+- Keep extracted folder for future use
+
+### If using Git Clone:
+- Need Git installed ([Download here](https://git-scm.com))
+- Can update easily with `git pull`
+- Better for version tracking
+
+### Step 1: Get the Project (Choose Option 1 or 2 Above)
 
 ### Step 2: Create Virtual Environment
 
