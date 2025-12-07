@@ -27,7 +27,7 @@ python -m pip install --upgrade pip
 # Step 4: Install dependencies
 echo ""
 echo "[Step 4/5] Installing dependencies..."
-pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn matplotlib pillow opencv-python streamlit==1.28.1 pandas
+pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn matplotlib pillow opencv-python pandas
 
 # Step 5: Verify installation
 echo ""
@@ -44,7 +44,7 @@ echo "1. Check data folders (Training/ and Testing/)"
 echo "2. Run: cd brain_tumor_project/src"
 echo "3. Run: python preprocess.py"
 echo "4. Run: python train_model.py"
-echo "5. Run: streamlit run ../../dashboard_app/app_clean.py"
+echo "5. Run: python evaluate.py (or predict.py) inside brain_tumor_project/src"
 echo ""
 echo "Documentation: Read GETTING_STARTED.md for detailed instructions"
 echo ""
