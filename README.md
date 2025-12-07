@@ -15,6 +15,24 @@
 
 ---
 
+## ▶️ ONE-COMMAND RUN (Dashboard)
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git; cd Brain-Tumor-Classification_; python -m venv .venv; .\.venv\Scripts\Activate.ps1; python -m pip install --upgrade pip; pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn matplotlib pillow opencv-python streamlit==1.28.1 pandas; streamlit run dashboard_app/app_clean.py
+```
+
+**macOS/Linux:**
+```bash
+git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git && cd Brain-Tumor-Classification_ && python3 -m venv .venv && source .venv/bin/activate && python -m pip install --upgrade pip && pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn matplotlib pillow opencv-python streamlit==1.28.1 pandas && streamlit run dashboard_app/app_clean.py
+```
+
+**Data reminder:** ensure `Training/` and `Testing/` folders with class subfolders (`glioma/ meningioma/ notumor/ pituitary/`) and images exist if you plan to evaluate or predict. If these folders are missing, `evaluate.py` and `predict.py` will exit with a clear error.
+
+**Model reminder:** place pretrained weights in `brain_tumor_project/models/` as `saved_model.h5` (baseline) and optionally `best_enhanced_model.h5` (enhanced). If models are absent, training scripts must be run before evaluation or prediction.
+
+---
+
 ## 🔽 OPTION 1: Download as ZIP File (Easiest - No Git Required)
 
 ### Step 1: Download ZIP
