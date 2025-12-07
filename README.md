@@ -5,7 +5,7 @@
 **Models**: 2 trained (Baseline CNN + VGG16 Enhanced)  
 **Accuracy**: 76.89% (baseline) → **86.19%** (enhanced) ⭐  
 **Dashboard**: Streamlit Web Interface  
-**GitHub**: https://github.com/meghana265-afk/Brain-Tumor-Classification
+**GitHub**: https://github.com/meghana265-afk/Brain-Tumor-Classification_
 
 ---
 
@@ -30,6 +30,22 @@ git clone https://github.com/meghana265-afk/Brain-Tumor-Classification_.git && c
 **Data reminder:** ensure `Training/` and `Testing/` folders with class subfolders (`glioma/ meningioma/ notumor/ pituitary/`) and images exist if you plan to evaluate or predict. If these folders are missing, `evaluate.py` and `predict.py` will exit with a clear error.
 
 **Model reminder:** place pretrained weights in `brain_tumor_project/models/` as `saved_model.h5` (baseline) and optionally `best_enhanced_model.h5` (enhanced). If models are absent, training scripts must be run before evaluation or prediction.
+
+## 📈 ONE-COMMAND METRICS (Baseline)
+
+Requires data and `saved_model.h5` in `brain_tumor_project/models/`.
+
+**Windows (PowerShell):**
+```powershell
+cd Brain-Tumor-Classification_ ; .\.venv\Scripts\Activate.ps1 ; .\.venv\Scripts\python.exe brain_tumor_project\src\evaluate.py
+```
+
+**macOS/Linux:**
+```bash
+cd Brain-Tumor-Classification_ && source .venv/bin/activate && .venv/bin/python brain_tumor_project/src/evaluate.py
+```
+
+Outputs to terminal plus files: `brain_tumor_project/outputs/confusion_matrix.png` and `brain_tumor_project/models/evaluation_report.txt`.
 
 ---
 
