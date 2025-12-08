@@ -228,14 +228,24 @@ print(f"\n[STAGE 2] Fine-Tuning (Unfreezing Last Conv Blocks)")
 print("="*70)
 
 # Unfreeze last 4 layers of VGG16 for fine-tuning
-base_model = model.layers[0]
-base_model.trainable = True
+# Find the base model in the model layers
+base_model = None
+for layer in model.layers:
+    if hasattr(layer, 'layers') and len(layer.layers) > 10:  # VGG16 has many layers
+        base_model = layer
+        break
 
-# Freeze all layers except last 4
-for layer in base_model.layers[:-4]:
-    layer.trainable = False
+if base_model is not None:
+    base_model.trainable = True
+    
+    # Freeze all layers except last 4
+    for layer in base_model.layers[:-4]:
+        layer.trainable = False
+    
+    print(f"[OK] Unfroze last 4 layers of base model")
+else:
+    print(f"[WARNING] Could not find base model for fine-tuning, skipping layer unfreezing")
 
-print(f"[OK] Unfroze last 4 layers of base model")
 trainable_count = sum([1 for layer in model.layers if layer.trainable])
 print(f"     Trainable layers: {trainable_count}")
 

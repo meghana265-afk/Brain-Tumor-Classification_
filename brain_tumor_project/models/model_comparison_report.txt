@@ -1,0 +1,41 @@
+======================================================================
+MODEL COMPARISON REPORT: BASELINE vs ENHANCED
+======================================================================
+
+OVERALL METRICS COMPARISON:
+----------------------------------------------------------------------
+Metric               | Baseline     | Enhanced     | Change      
+----------------------------------------------------------------------
+Accuracy             | 0.8909       | 0.8871       | -0.38%
+Precision            | 0.8907       | 0.8857       | -0.50%
+Recall               | 0.8832       | 0.8795       | -0.37%
+F1 Score             | 0.8842       | 0.8789       | -0.52%
+
+
+PER-CLASS F1-SCORE COMPARISON:
+----------------------------------------------------------------------
+Class           | Baseline     | Enhanced     | Change      
+----------------------------------------------------------------------
+glioma          | 0.8797       | 0.8540       | -2.57%
+meningioma      | 0.7761       | 0.8000       | +2.39%
+notumor         | 0.9412       | 0.9613       | +2.01%
+pituitary       | 0.9397       | 0.9005       | -3.92%
+
+
+KEY FINDINGS:
+----------------------------------------------------------------------
+Overall Verdict: NO IMPROVEMENT
+Accuracy Improvement: -0.38%
+F1-Score Improvement: -0.52%
+
+Most Improved Class:
+  meningioma: +2.39%
+
+Least Improved Class:
+  pituitary: -3.92%
+
+
+RECOMMENDATIONS:
+----------------------------------------------------------------------
+- Model performance is good. Consider deploying the enhanced model.
+- Baseline model performs similarly. Review training procedure.
