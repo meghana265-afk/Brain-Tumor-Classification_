@@ -3,6 +3,7 @@
 
 **Status**: ✅ Complete & Production-Ready  
 **Models**: 2 trained (Baseline CNN + VGG16 Enhanced)  
+**Presentation**: 📊 [View Project Presentation on Canva](https://www.canva.com/design/DAG6Ver8_Qo/Qcw4Jml9xEldqL090Ul4Hg/edit)  
 
 ## ⚡ QUICKEST START (30 seconds)
 
