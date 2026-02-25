@@ -346,6 +346,8 @@ python predict.py your_image.jpg
 - **Need guidance?** Check `COMPLETE_GUIDE.txt`
 
 ---
+## PPT LINK (PRESENTATION) 
+https://www.canva.com/design/DAG6Ver8_Qo/Qcw4Jml9xEldqL090Ul4Hg/edit
 
 **Last Updated:** December 5, 2025
 **Status:** ✅ Complete & Ready to Use
